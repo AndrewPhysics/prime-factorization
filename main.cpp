@@ -1,15 +1,9 @@
 #include <iostream>
 using namespace std;
 
-bool P_property(int x) {
-	return x == 0;
-}
-
-
-
-void getPrimeFactors(int aa[], int m, int number) {
+void getPrimeFactors(int aa[], int m, int number)
+{
 	cout << "the prime factorization of number=" << number << " is: " << endl;
-	
 	cout << number << "=";
 	for (int i = 0; i < m; i++)
 	{
@@ -17,7 +11,8 @@ void getPrimeFactors(int aa[], int m, int number) {
 	}
 	cout << "1" << endl;
 }
-void factor1() {
+void factor1()
+{
 	int number;
 	cout << "Please type in an integer number!" << endl;
 	cin >> number;
@@ -45,13 +40,9 @@ void factor1() {
 	cout << "---------------------" << endl;
 	getPrimeFactors(aa, i, numberOut);
 }
-
-
-
-int main() {
+int main() 
+{
 	factor1();
-	factor1();
-
 	system("pause");
 	return 0;
 }
